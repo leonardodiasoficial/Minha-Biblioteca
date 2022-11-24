@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "principal";
+    src: url(../fontes/AldotheApache.ttf);
+}
+
+header {
+    font-family: "principal", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+nav {
+    font-family: "principal", sans-serif;
+    font-size: 75px;
+    text-align: center;
+}
+
+nav > a {
+    color: black;
+    text-decoration: none;
+}
