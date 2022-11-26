@@ -5,19 +5,38 @@
     src: url(../fontes/AldotheApache.ttf);
 }
 
+body {
+    background-color: rgb(0, 0, 21);
+}
+
 header {
+    color: white;
     font-family: "principal", sans-serif;
-    font-size: 30px;
+}
+
+header > h1 {
+    font-size: 75px;
     text-align: center;
+    font-weight: normal;
 }
 
 nav {
     font-family: "principal", sans-serif;
-    font-size: 75px;
+    font-size: 60px;
     text-align: center;
 }
 
 nav > a {
-    color: black;
+    display: block;
+    color: white;
     text-decoration: none;
+    padding: 100px;
+}
+
+nav > a#html:hover {
+    color: #F2622E;
+}
+
+nav >a#css:hover {
+    color: #2E6FF2;
 }
