@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "htmlcss";
+    src: url(../fontes/AldotheApache.ttf);
+}
+
+@font-face {
+    font-family: "principal";
+    src: url(../fontes/Whitestone.otf);
+}
+
+
+* {
+    background-color: rgb(0, 0, 21);
+}
+
+header {
+    color: white;
+    font-family: "principal", sans-serif;
+}
+
+header > h1 {
+    font-size: 75px;
+    text-align: center;
+    font-weight: normal;
+}
+
+nav {
+    font-family: "htmlcss", sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+nav > a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 100px;
+}
+
+nav > a#html:hover {
+    transition-duration: 0.1s;
+    transition-delay: 0.2s;
+    color: #F2622E;
+    background-image: url(../imagens/html.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+nav >a#css:hover {
+    transition-duration: 0.1s;
+    transition-delay: 0.2s;
+    color: #2E6FF2;
+    background-image: url(../imagens/css.png);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

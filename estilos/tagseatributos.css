@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "principal";
+    src: url(../fontes/Whitestone.otf);
+}
+
+@font-face {
+    font-family: "texto";
+    src: url(../fontes/BreeSerif-Regular.ttf);
+}
+
+
+* {
+    background-color: rgb(0, 0, 21);
+    color: white;
+}
+
+header {
+    font-family: 'principal', sans-serif;
+}
+
+header > h1 {
+    font-weight: normal;
+    font-size: 90px;
+    text-align: center;
+    font-weight: normal;
+}
+
+nav {
+    width: 700px;
+    margin: auto;
+}
+
+nav li {
+    margin-bottom: 60px;
+    font-family: 'texto', serif;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'principal', sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+nav a:hover {
+    transition-duration: 0.1s;
+    transition-delay: 0.1s;
+    color: #F2622E;
+}
+
+footer > a {
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer > a:hover {
+    transition-delay: 0.2s;
+    transition-duration: 0.1s;
+    color: #2E6FF2;
+}
