@@ -40,8 +40,6 @@ nav > a {
 }
 
 nav > a#html:hover {
-    transition-duration: 0.1s;
-    transition-delay: 0.2s;
     color: #F2622E;
     background-image: url(../imagens/html.png);
     background-size: 400px;
@@ -50,8 +48,6 @@ nav > a#html:hover {
 }
 
 nav >a#css:hover {
-    transition-duration: 0.1s;
-    transition-delay: 0.2s;
     color: #2E6FF2;
     background-image: url(../imagens/css.png);
     background-size: 400px;
