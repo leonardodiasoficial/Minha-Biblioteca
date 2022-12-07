@@ -5,31 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;!--&gt;</title>
+    <title>&lt;base&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;!--...--&gt;</h1>
+        <h1>&lt;base&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                É usada para inserir comentários no código-fonte. Os comentários não são exibidos nos navegadores. <br>
-                Você pode usar comentários para explicar seu código, o que pode ajudá-lo quando você editar o código-fonte posteriormente. Isso é especialmente útil se você tiver muito código.
+                Especifica a URL base e/ou destino para todas as URLs relativas em um documento.
+            </p>
+            <p>
+                Deve ter um href ou um atributo de destino presente, ou ambos.
+            </p>
+            <p>
+                Só pode haver um único &lt;base&gt; em um documento e ele deve estar dentro da tag &lt;head&gt;.
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
             <p>
-                A marca de comentário não suporta nenhum atributo.
+                <a href="#">href</a> - Especifica o URL base de todos os URLs relativos na página.
+            </p>
+            <p>
+                <a href="#">target</a> - Especifica o destino padrão para todos os hiperlinks e formulários na página.
+            </p>
+            <p>
+                <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
             </p>
         </section>
         <section>
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;!--This is a comment. Comments are not displayed in the browser--&gt;
+&lt;base href="https://www.w3schools.com/" target="_blank"&gt;
                 </code>
             </pre>
         </section>
@@ -37,7 +48,7 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-Não é possível usar o css com a marca de comentário
+Não suporta a Configuração do CSS
                 </code>
             </pre>
         </section>

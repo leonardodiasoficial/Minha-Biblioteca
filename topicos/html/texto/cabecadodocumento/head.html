@@ -5,31 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;!--&gt;</title>
+    <title>&lt;head&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;!--...--&gt;</h1>
+        <h1>&lt;head&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                É usada para inserir comentários no código-fonte. Os comentários não são exibidos nos navegadores. <br>
-                Você pode usar comentários para explicar seu código, o que pode ajudá-lo quando você editar o código-fonte posteriormente. Isso é especialmente útil se você tiver muito código.
+                É um contêiner para metadados (dados sobre dados) e é colocado entre as tags &lt;html&gt; e &lt;body&gt;. <br>
+                Metadados são dados sobre o documento HTML. Os metadados não são exibidos. <br>
+                Os metadados geralmente definem o título do documento, conjunto de caracteres, estilos, scripts e outras metainformações. <br>
+                Os seguintes elementos podem ir dentro do &lt;head&gt;: <br>
+                -    &lt;title&gt; (exibido em todo documento HTML) <br>
+                -    &lt;style&gt; <br>
+                -    &lt;base&gt; <br>
+                -    &lt;link&gt; <br>
+                -    &lt;meta&gt; <br>
+                -    &lt;script&gt; <br>
+                -    &lt;noscript&gt;
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
             <p>
-                A marca de comentário não suporta nenhum atributo.
+                <a href="#">Atributos Globais</a> - A tag suporta atributos globais em HTML.
             </p>
         </section>
         <section>
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;!--This is a comment. Comments are not displayed in the browser--&gt;
+&lt;head&gt;
+    &lt;title&gt;Title of the document&lt;/title&gt;
+&lt;/head&gt;
                 </code>
             </pre>
         </section>
@@ -37,7 +48,9 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-Não é possível usar o css com a marca de comentário
+head {
+    display: none;
+}
                 </code>
             </pre>
         </section>
