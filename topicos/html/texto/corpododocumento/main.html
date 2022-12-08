@@ -5,33 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;!DOCTYPE&gt;</title>
+    <title>&lt;main&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;!DOCTYPE&gt;</h1>
+        <h1>&lt;main&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Todos os documentos HTML devem começar com uma &lt;!DOCTYPE&gt;.
+                Especifica o conteúdo principal de um documento.
             </p>
             <p>
-                Não é uma tag HTML. É uma "informação" para o navegador sobre qual tipo de documento esperar.
+                O conteúdo dentro do &lt;main&gt; deve ser exclusivo do documento. Ele não deve conter nenhum conteúdo repetido em documentos, como barras laterais, links de navegação, informações de direitos autorais, logotipos de sites e formulários de pesquisa.
+            </p>
+            <h3>Notas</h3>
+            <p>
+                Não deve haver mais de um &lt;main&gt; em um documento. 
+            </p>
+            <p>
+                O &lt;main&gt; NÃO deve ser descendente de um elemento &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;, &lt;header&gt; ou &lt;nav&gt;.
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
             <p>
-                Não existe atributos para esse elemento.
+                <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
+            </p>
+            <p>
+                <a href="#">Atributos de Evento</a> - A tag oferece suporte aos atributos de evento em HTML.
             </p>
         </section>
         <section>
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;!DOCTYPE html&gt;
+&lt;main&gt;
+    &lt;h1&gt;Most Popular Browsers&lt;/h1&gt;
+    &lt;p&gt;Chrome, Firefox, and Edge are the most used browsers today.&lt;/p&gt;
+    &lt;article&gt;
+        &lt;h2&gt;Google Chrome&lt;/h2&gt;
+        &lt;p&gt;Google Chrome.&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
                 </code>
             </pre>
         </section>
@@ -39,7 +56,9 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-Não suporta configuração de CSS
+main {
+    display: block;
+    }
                 </code>
             </pre>
         </section>
@@ -48,34 +67,34 @@ Não suporta configuração de CSS
             <ul type="none">
                 <li>
                     <p>
-                        Chrome = ✔️
+                        Chrome = ✔️ (26.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Edge = ✔️
+                        Edge = ✔️ (12.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Firefox = ✔️
+                        Firefox = ✔️ (21.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Safari = ✔️
+                        Safari = ✔️ (7.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Opera = ✔️
+                        Opera = ✔️ (16.0)
                     </p>
                 </li>
             </ul>
         </section>
     </main>
     <footer>
-        <a href="../../tags/cabecadodocumento.html">Voltar a página das tags do tópico cabeça do documento</a> <br>
+        <a href="../../tags/corpododocumento.html">Voltar a página das tags do tópico corpo do documento</a> <br>
         <a href="../../html.html">Voltar a página das tags do HTML</a> <br>
         <a href="../../../../principal/index.html">Voltar a página inicial</a>
     </footer>

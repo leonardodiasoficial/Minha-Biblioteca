@@ -5,33 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;!DOCTYPE&gt;</title>
+    <title>&lt;header&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;!DOCTYPE&gt;</h1>
+        <h1>&lt;header&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Todos os documentos HTML devem começar com uma &lt;!DOCTYPE&gt;.
+                Representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação.
             </p>
             <p>
-                Não é uma tag HTML. É uma "informação" para o navegador sobre qual tipo de documento esperar.
+                Um &lt;header&gt; normalmente contém:
+            </p>
+            <p>
+                - Um ou mais elementos de cabeçalho (&lt;h1&gt; - &lt;h6&gt;);
+            </p>
+            <p>
+                - Logotipo ou ícone;
+            </p>
+            <p>
+                - Informações de autoria.
+            </p>
+            <h3>Notas</h3>
+            <p>
+                Você pode ter vários &lt;header&gt; elementos em um documento HTML. No entanto, &lt;header&gt; não pode ser colocado dentro de um &lt;footer&gt;, &lt;address&gt; ou outro &lt;header&gt; elemento.
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
             <p>
-                Não existe atributos para esse elemento.
+                <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
+            </p>
+            <p>
+                <a href="#">Atributos de Evento</a> - A tag oferece suporte aos atributos de evento em HTML.
             </p>
         </section>
         <section>
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;!DOCTYPE html&gt;
+&lt;header&gt;
+    &lt;h1&gt;A heading here&lt;/h1&gt;
+    &lt;p&gt;Posted by John Doe&lt;/p&gt;
+    &lt;p&gt;Some additional information here&lt;/p&gt;
+&lt;/header&gt;
                 </code>
             </pre>
         </section>
@@ -39,7 +59,9 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-Não suporta configuração de CSS
+header {
+    display: block;
+    }
                 </code>
             </pre>
         </section>
@@ -48,34 +70,34 @@ Não suporta configuração de CSS
             <ul type="none">
                 <li>
                     <p>
-                        Chrome = ✔️
+                        Chrome = ✔️ (5.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Edge = ✔️
+                        Edge = ✔️ (9.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Firefox = ✔️
+                        Firefox = ✔️ (4.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Safari = ✔️
+                        Safari = ✔️ (5.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Opera = ✔️
+                        Opera = ✔️ (11.1)
                     </p>
                 </li>
             </ul>
         </section>
     </main>
     <footer>
-        <a href="../../tags/cabecadodocumento.html">Voltar a página das tags do tópico cabeça do documento</a> <br>
+        <a href="../../tags/corpododocumento.html">Voltar a página das tags do tópico corpo do documento</a> <br>
         <a href="../../html.html">Voltar a página das tags do HTML</a> <br>
         <a href="../../../../principal/index.html">Voltar a página inicial</a>
     </footer>
