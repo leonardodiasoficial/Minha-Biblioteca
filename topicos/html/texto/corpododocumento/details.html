@@ -5,28 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;body&gt;</title>
+    <title>&lt;details&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;body&gt;</h1>
+        <h1>&lt;details&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Define o corpo do documento.
+                Especifica detalhes adicionais que o usuário pode abrir e fechar sob demanda.
             </p>
             <p>
-                Contém todo o conteúdo de um documento HTML, como cabeçalhos, parágrafos, imagens, hyperlinks, tabelas, listas, etc.
+                Geralmente é usada para criar um widget interativo que o usuário pode abrir e fechar. Por padrão, o widget está fechado. Quando aberto, ele se expande e exibe o conteúdo dentro dele.
+            </p>
+            <p>
+                Qualquer tipo de conteúdo pode ser colocado dentro da tag. 
             </p>
             <h3>Notas</h3>
             <p>
-                Só pode haver um &lt;body&gt; elemento em um documento HTML.
+                A tag &lt;summary&gt; é usada em conjunto com &lt;details&gt; para especificar um título visível para os detalhes.
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
+            <p>
+                <a href="#">open</a> - Especifica que os detalhes devem estar visíveis (abertos) para o usuário.
+            </p>
             <p>
                 <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
             </p>
@@ -38,10 +44,10 @@
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;body&gt;
-    &lt;h1&gt;This is a heading&lt;/h1&gt;
-    &lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;/body&gt;
+&lt;details&gt;
+    &lt;summary&gt;Epcot Center&lt;/summary&gt;
+    &lt;p&gt;Epcot is a theme park.&lt;/p&gt;
+&lt;/details&gt;
                 </code>
             </pre>
         </section>
@@ -49,14 +55,9 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-body {
+display {
     display: block;
-    margin: 8px;
-}
-    
-body:focus {
-    outline: none;
-}
+    }
                 </code>
             </pre>
         </section>
@@ -65,27 +66,27 @@ body:focus {
             <ul type="none">
                 <li>
                     <p>
-                        Chrome = ✔️
+                        Chrome = ✔️ (12.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Edge = ✔️
+                        Edge = ✔️ (79.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Firefox = ✔️
+                        Firefox = ✔️ (49.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Safari = ✔️
+                        Safari = ✔️ (6.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Opera = ✔️
+                        Opera = ✔️ (15.0)
                     </p>
                 </li>
             </ul>
