@@ -5,24 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;p&gt;</title>
+    <title>&lt;pre&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;p&gt;</h1>
+        <h1>&lt;pre&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Define um parágrafo.
+                Define o texto pré-formatado.
             </p>
             <p>
-                Os navegadores adicionam automaticamente uma única linha em branco antes e depois de cada elemento.
-            </p>
-            <h3>Notas</h3>
-            <p>
-                Use CSS para estilizar parágrafos.
+                Exibido em uma fonte de largura fixa e o texto preserva espaços e quebras de linha. O texto será exibido exatamente como escrito no código-fonte HTML.
             </p>
         </section>
         <section>
@@ -38,9 +34,13 @@
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;p&gt;
-    This is some text in a paragraph.
-&lt;/p&gt;
+&lt;pre&gt;
+    Text in a pre element
+    is displayed in a fixed-width
+    font, and it preserves
+    both spaces and
+    line breaks
+&lt;/pre&gt;
                 </code>
             </pre>
         </section>
@@ -48,12 +48,11 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-p {
+pre {
     display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
 }
                 </code>
             </pre>

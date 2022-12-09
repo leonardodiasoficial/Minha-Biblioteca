@@ -5,24 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;p&gt;</title>
+    <title>&lt;sup&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;p&gt;</h1>
+        <h1>&lt;sup&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Define um parágrafo.
-            </p>
-            <p>
-                Os navegadores adicionam automaticamente uma única linha em branco antes e depois de cada elemento.
-            </p>
-            <h3>Notas</h3>
-            <p>
-                Use CSS para estilizar parágrafos.
+                Define o texto sobrescrito. O texto sobrescrito aparece meio caractere acima da linha normal e, às vezes, é renderizado em uma fonte menor. O texto sobrescrito pode ser usado para notas de rodapé, como WWW<sup>[1]</sup> .
             </p>
         </section>
         <section>
@@ -39,7 +32,7 @@
             <pre>
                 <code>
 &lt;p&gt;
-    This is some text in a paragraph.
+    This text &lt;sup&gt;superscript&lt;/sup&gt; text.
 &lt;/p&gt;
                 </code>
             </pre>
@@ -48,12 +41,9 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-p {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+sup {
+    vertical-align: super;
+    font-size: smaller;
 }
                 </code>
             </pre>

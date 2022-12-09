@@ -5,25 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;p&gt;</title>
+    <title>&lt;dfn&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;p&gt;</h1>
+        <h1>&lt;dfn&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Define um parágrafo.
+                Representa o "elemento de definição" e especifica um termo que será definido no conteúdo.
             </p>
             <p>
-                Os navegadores adicionam automaticamente uma única linha em branco antes e depois de cada elemento.
+                O pai mais próximo da tag também deve conter a definição/explicação do termo.
             </p>
-            <h3>Notas</h3>
             <p>
-                Use CSS para estilizar parágrafos.
+                O termo dentro da tag pode ser qualquer um dos seguintes:
             </p>
+            <p>
+                1. Assim como o conteúdo do elemento:
+            </p>
+            <pre>
+                <code>
+&lt;p&gt;
+    &lt;dfn&gt;HTML&lt;/dfn&gt; is the...
+&lt;/p&gt;
+                </code>
+            </pre>
+            <p>
+                Ou, com o atributo de título adicionado:
+            </p>
+            <pre>
+                <code>
+&lt;p&gt;
+    &lt;dfn title="HyperText Markup Language"&gt;HTML&lt;/dfn&gt; is the ...
+&lt;/p&gt;
+                </code>
+            </pre>
+            <p>
+                Ou, com uma tag &lt;abbr&gt; dentro do elemento:
+            </p>
+            <pre>
+                <code>
+&lt;p&gt;
+    &lt;dfn&gt;&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;&lt;/dfn&gt; is the ...
+&lt;/p&gt;
+                </code>
+            </pre>
+            <p>
+                Ou, com o atributo id adicionado. Então, sempre que um termo é usado, ele pode se referir à definição com uma tag &lt;a&gt;:
+            </p>
+            <pre>
+                <code>
+&lt;p&gt;
+    &lt;dfn id="html-def"&gt;HTML&lt;/dfn&gt; is the ...
+&lt;/p&gt;
+                </code>
+            </pre>
         </section>
         <section>
             <h2>Atributos</h2>
@@ -39,7 +78,7 @@
             <pre>
                 <code>
 &lt;p&gt;
-    This is some text in a paragraph.
+    &lt;dfn&gt;HTML&lt;/dfn&gt; is the standard markup language.
 &lt;/p&gt;
                 </code>
             </pre>
@@ -48,12 +87,8 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-p {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+dfn {
+    font-style: italic;
 }
                 </code>
             </pre>

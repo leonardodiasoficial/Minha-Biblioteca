@@ -5,28 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;p&gt;</title>
+    <title>&lt;output&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;p&gt;</h1>
+        <h1>&lt;output&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Define um parágrafo.
-            </p>
-            <p>
-                Os navegadores adicionam automaticamente uma única linha em branco antes e depois de cada elemento.
-            </p>
-            <h3>Notas</h3>
-            <p>
-                Use CSS para estilizar parágrafos.
+                Usada para representar o resultado de um cálculo (como um realizado por um script).
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
+            <p>
+                <a href="#">for</a> - Especifica a relação entre o resultado do cálculo e os elementos usados ​​no cálculo
+            </p>
+            <p>
+                <a href="#">form</a> - Especifica a qual formulário o elemento de saída pertence
+            </p>
+            <p>
+                <a href="#">name</a> - Especifica um nome para o elemento de saída
+            </p>
             <p>
                 <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
             </p>
@@ -38,9 +40,11 @@
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;p&gt;
-    This is some text in a paragraph.
-&lt;/p&gt;
+&lt;form oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;
+    &lt;input type="range" id="a" value="50"&gt;
+    +&lt;input type="number" id="b" value="25"&gt;
+    =&lt;output name="x" for="a b">&lt;/output&gt;
+&lt;/form&gt;
                 </code>
             </pre>
         </section>
@@ -48,12 +52,8 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-p {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+output {
+    display: inline;
 }
                 </code>
             </pre>
@@ -63,27 +63,27 @@ p {
             <ul type="none">
                 <li>
                     <p>
-                        Chrome = ✔️
+                        Chrome = ✔️ (10.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Edge = ✔️
+                        Edge = ✔️ (13.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Firefox = ✔️
+                        Firefox = ✔️ (4.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Safari = ✔️
+                        Safari = ✔️ (5.1)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Opera = ✔️
+                        Opera = ✔️ (11.0)
                     </p>
                 </li>
             </ul>

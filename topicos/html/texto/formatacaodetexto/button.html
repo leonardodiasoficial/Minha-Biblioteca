@@ -5,28 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;p&gt;</title>
+    <title>&lt;button&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;p&gt;</h1>
+        <h1>&lt;button&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Define um parágrafo.
+                Define um botão clicável.
             </p>
             <p>
-                Os navegadores adicionam automaticamente uma única linha em branco antes e depois de cada elemento.
+                Dentro de um &lt;button&gt; você pode colocar texto (e tags como &lt;i&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;br&gt;, &lt;img&gt;, etc.). Isso não é possível com um botão criado com o &lt;input&gt;!
             </p>
             <h3>Notas</h3>
             <p>
-                Use CSS para estilizar parágrafos.
+                Sempre especifique o typeatributo para um elemento, para informar aos navegadores que tipo de botão é.
+            </p>
+            <p>
+                Você pode facilmente estilizar botões com CSS!
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
+            <p>
+                <a href="#">autofocus</a> - Especifica que um botão deve obter foco automaticamente quando a página for carregada
+            </p>
+            <p>
+                <a href="#">disabled</a> - Especifica que um botão deve ser desabilitado
+            </p>
+            <p>
+                <a href="#">form</a> - Especifica a qual formulário o botão pertence
+            </p>
+            <p>
+                <a href="#">formaction</a> - Especifica para onde enviar os dados do formulário quando um formulário é enviado. Somente para type="enviar"
+            </p>
+            <p>
+                <a href="#">formenctype</a> - Especifica como os dados do formulário devem ser codificados antes de serem enviados para um servidor. Somente para type="enviar"
+            </p>
+            <p>
+                <a href="#">formmethod</a> - Especifica como enviar os dados do formulário (qual método HTTP usar). Somente para type="enviar"
+            </p>
+            <p>
+                <a href="#">formnovalidate</a> - Especifica que os dados do formulário não devem ser validados no envio. Somente para type="enviar"
+            </p>
+            <p>
+                <a href="#">formtarget</a> - Especifica onde exibir a resposta após o envio do formulário. Somente para type="enviar"
+            </p>
+            <p>
+                <a href="#">name</a> - Especifica um nome para o botão
+            </p>
+            <p>
+                <a href="#">type</a> - Especifica o tipo de botão
+            </p>
+            <p>
+                <a href="#">value</a> - Especifica um valor inicial para o botão
+            </p>
             <p>
                 <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
             </p>
@@ -38,9 +74,7 @@
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;p&gt;
-    This is some text in a paragraph.
-&lt;/p&gt;
+&lt;button type="button"&gt;Click Me!&lt;/button&gt;
                 </code>
             </pre>
         </section>
@@ -48,13 +82,7 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-p {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-}
+Não tem
                 </code>
             </pre>
         </section>

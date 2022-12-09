@@ -5,24 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;p&gt;</title>
+    <title>&lt;abbr&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;p&gt;</h1>
+        <h1>&lt;abbr&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Define um parágrafo.
-            </p>
-            <p>
-                Os navegadores adicionam automaticamente uma única linha em branco antes e depois de cada elemento.
+                define uma abreviação ou um acrônimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
             </p>
             <h3>Notas</h3>
             <p>
-                Use CSS para estilizar parágrafos.
+                Use o atributo global para mostrar a descrição da abreviação/acrônimo ao passar o mouse sobre o elemento.
             </p>
         </section>
         <section>
@@ -38,9 +35,7 @@
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;p&gt;
-    This is some text in a paragraph.
-&lt;/p&gt;
+The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.
                 </code>
             </pre>
         </section>
@@ -48,12 +43,8 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-p {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+abbr {
+    display: inline;
 }
                 </code>
             </pre>

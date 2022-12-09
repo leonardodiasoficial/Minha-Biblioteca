@@ -5,24 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;p&gt;</title>
+    <title>&lt;hr&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;p&gt;</h1>
+        <h1>&lt;hr&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Define um parágrafo.
+                Define uma quebra temática em uma página HTML (por exemplo, uma mudança de tópico).
             </p>
             <p>
-                Os navegadores adicionam automaticamente uma única linha em branco antes e depois de cada elemento.
-            </p>
-            <h3>Notas</h3>
-            <p>
-                Use CSS para estilizar parágrafos.
+                Geralmente é exibido como uma régua horizontal usada para separar o conteúdo (ou definir uma alteração) em uma página HTML.
             </p>
         </section>
         <section>
@@ -39,7 +35,13 @@
             <pre>
                 <code>
 &lt;p&gt;
-    This is some text in a paragraph.
+    HTML is the standard.
+&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;
+    CSS is a language.
 &lt;/p&gt;
                 </code>
             </pre>
@@ -48,12 +50,14 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-p {
+hr {
     display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 }
                 </code>
             </pre>

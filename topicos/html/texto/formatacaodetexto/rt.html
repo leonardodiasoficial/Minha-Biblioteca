@@ -5,24 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;p&gt;</title>
+    <title>&lt;rt&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;p&gt;</h1>
+        <h1>&lt;rt&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Define um parágrafo.
+                Define uma explicação ou pronúncia de caracteres (para tipografia do Leste Asiático) em uma anotação rubi.
             </p>
             <p>
-                Os navegadores adicionam automaticamente uma única linha em branco antes e depois de cada elemento.
-            </p>
-            <h3>Notas</h3>
-            <p>
-                Use CSS para estilizar parágrafos.
+                Junto com &lt;ruby&gt; e &lt;rp&gt; : O elemento &lt;ruby&gt; consiste em um ou mais caracteres que precisam de uma explicação/pronúncia e um &lt;rt&gt; que fornece essas informações e um elemento &lt;rp&gt; opcional que define o que mostrar navegadores que não suportam anotações ruby.
             </p>
         </section>
         <section>
@@ -38,9 +34,9 @@
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;p&gt;
-    This is some text in a paragraph.
-&lt;/p&gt;
+&lt;ruby&gt;
+    漢 &lt;rt&gt; ㄏㄢˋ &lt;/rt&gt;
+&lt;/ruby&gt;
                 </code>
             </pre>
         </section>
@@ -48,12 +44,8 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-p {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
+rt {
+    line-height: normal;
 }
                 </code>
             </pre>
@@ -62,28 +54,28 @@ p {
             <h2>Compatibilidade dos Navegadores</h2>
             <ul type="none">
                 <li>
-                    <p>
-                        Chrome = ✔️
+                    <p> 
+                        Chrome = ✔️ (5.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Edge = ✔️
+                        Edge = ✔️ (5.5)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Firefox = ✔️
+                        Firefox = ✔️ (38.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Safari = ✔️
+                        Safari = ✔️ (5.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Opera = ✔️
+                        Opera = ✔️ (15.0)
                     </p>
                 </li>
             </ul>
