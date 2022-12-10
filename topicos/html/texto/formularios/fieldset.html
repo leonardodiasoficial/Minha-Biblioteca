@@ -5,81 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;form&gt;</title>
+    <title>&lt;fieldset&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;form&gt;</h1>
+        <h1>&lt;fieldset&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Usada para criar um formulário HTML para entrada do usuário.
+                Usada para agrupar elementos relacionados em um formulário.
             </p>
             <p>
-                O elemento pode conter um ou mais dos seguintes elementos de formulário:
-            </p>
-            <p>
-                &lt;entrada&gt;
-            </p>
-            <p>
-                &lt;área de texto&gt;
-            </p>
-            <p>
-                &lt;botão&gt;
-            </p>
-            <p>
-                &lt;selecionar&gt;
-            </p>
-            <p>
-                &lt;opção&gt;
-            </p>
-            <p>
-                &lt;optgroup&gt;
-            </p>
-            <p>
-                &lt;conjunto de campos&gt;
-            </p>
-            <p>
-                &lt;rótulo&gt;
-            </p>
-            <p>
-                &lt;saída&gt;
+                Desenha uma caixa ao redor dos elementos relacionados.
             </p>
             <h3>Notas</h3>
             <p>
-                ...
+                A tag &lt;legend&gt; é usada para definir uma legenda para o &lt;fieldset&gt;.
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
             <p>
-                <a href="#">accept-charset</a> - Especifica as codificações de caracteres que devem ser usadas para o envio do formulário.
+                <a href="#">disabled</a> - Especifica que um grupo de elementos de formulário relacionados deve ser desabilitado.
             </p>
             <p>
-                <a href="#">action</a> - Especifica para onde enviar os dados do formulário quando um formulário é enviado.
+                <a href="#">form</a> - Especifica a qual formulário o conjunto de campos pertence.
             </p>
             <p>
-                <a href="#">autocomplete</a> - Especifica se um formulário deve ter o preenchimento automático ativado ou desativado.
-            </p>
-            <p>
-                <a href="#">enctype</a> - Especifica como os dados do formulário devem ser codificados ao enviá-los ao servidor (somente para method="post").
-            </p>
-            <p>
-                <a href="#">method</a> - Especifica o método HTTP a ser usado ao enviar dados de formulário.
-            </p>
-            <p>
-                <a href="#">name</a> - Especifica o nome de um formulário.
-            </p>
-            <p>
-                <a href="#">novalidate</a> - Especifica que o formulário não deve ser validado quando enviado.
-            </p>
-            <p>
-                <a href="#">rel</a> - Especifica a relação entre um recurso vinculado e o documento atual.
-            </p>
-            <p>
-                <a href="#">target</a> - Especifica onde exibir a resposta recebida após o envio do formulário.
+                <a href="#">name</a> - Especifica um nome para o fieldset.
             </p>
             <p>
                 <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
@@ -92,8 +47,14 @@
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;form action="/action_page.php" method="get"&gt;
+&lt;form action="/action_page.php"&gt;
+&lt;fieldset&gt;
+    &lt;legend&gt;Personalia:&lt;/legend&gt;
     &lt;label for="fname"&gt;First name:&lt;/label&gt;
+    &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+    &lt;label for="lname"&gt;Last name:&lt;/label&gt;
+    &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;/fieldset&gt;
 &lt;/form&gt;
                 </code>
             </pre>
@@ -102,9 +63,15 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-form {
+fieldset {
     display: block;
-    margin-top: 0em;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
 }
                 </code>
             </pre>

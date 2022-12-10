@@ -5,81 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;form&gt;</title>
+    <title>&lt;option&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;form&gt;</h1>
+        <h1>&lt;option&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Usada para criar um formulário HTML para entrada do usuário.
+                Define uma opção em uma lista de seleção.
             </p>
             <p>
-                O elemento pode conter um ou mais dos seguintes elementos de formulário:
-            </p>
-            <p>
-                &lt;entrada&gt;
-            </p>
-            <p>
-                &lt;área de texto&gt;
-            </p>
-            <p>
-                &lt;botão&gt;
-            </p>
-            <p>
-                &lt;selecionar&gt;
-            </p>
-            <p>
-                &lt;opção&gt;
-            </p>
-            <p>
-                &lt;optgroup&gt;
-            </p>
-            <p>
-                &lt;conjunto de campos&gt;
-            </p>
-            <p>
-                &lt;rótulo&gt;
-            </p>
-            <p>
-                &lt;saída&gt;
+                Os elementos vão dentro de um elemento &lt;select&gt; , &lt;optgroup&gt; ou &lt;datalist&gt;.
             </p>
             <h3>Notas</h3>
             <p>
-                ...
+                A &lt;option&gt; tag pode ser usada sem nenhum atributo, mas geralmente é necessário o atributo value , que indica o que é enviado ao servidor no envio do formulário.
+            </p>
+            <p>
+                Se você tiver uma longa lista de opções, poderá agrupar as opções relacionadas na tag &lt;optgroup&gt;.
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
             <p>
-                <a href="#">accept-charset</a> - Especifica as codificações de caracteres que devem ser usadas para o envio do formulário.
+                <a href="#">disabled</a> - Especifica que uma opção deve ser desativada.
             </p>
             <p>
-                <a href="#">action</a> - Especifica para onde enviar os dados do formulário quando um formulário é enviado.
+                <a href="#">label</a> - Especifica um rótulo mais curto para uma opção.
             </p>
             <p>
-                <a href="#">autocomplete</a> - Especifica se um formulário deve ter o preenchimento automático ativado ou desativado.
+                <a href="#">selected</a> - Especifica que uma opção deve ser pré-selecionada quando a página for carregada.
             </p>
             <p>
-                <a href="#">enctype</a> - Especifica como os dados do formulário devem ser codificados ao enviá-los ao servidor (somente para method="post").
-            </p>
-            <p>
-                <a href="#">method</a> - Especifica o método HTTP a ser usado ao enviar dados de formulário.
-            </p>
-            <p>
-                <a href="#">name</a> - Especifica o nome de um formulário.
-            </p>
-            <p>
-                <a href="#">novalidate</a> - Especifica que o formulário não deve ser validado quando enviado.
-            </p>
-            <p>
-                <a href="#">rel</a> - Especifica a relação entre um recurso vinculado e o documento atual.
-            </p>
-            <p>
-                <a href="#">target</a> - Especifica onde exibir a resposta recebida após o envio do formulário.
+                <a href="#">value</a> - Specifies the value to be sent to a server.
             </p>
             <p>
                 <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
@@ -92,9 +53,9 @@
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;form action="/action_page.php" method="get"&gt;
-    &lt;label for="fname"&gt;First name:&lt;/label&gt;
-&lt;/form&gt;
+&lt;select id="cars"&gt;
+    &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+&lt;/select&gt;
                 </code>
             </pre>
         </section>
@@ -102,10 +63,7 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-form {
-    display: block;
-    margin-top: 0em;
-}
+Não tem.
                 </code>
             </pre>
         </section>

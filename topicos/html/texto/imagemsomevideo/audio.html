@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../estilos/texto.css">
+    <title>&lt;audio&gt;</title>
+</head>
+<body>
+    <header>
+        <h1>&lt;audio&gt;</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Descrição</h2>
+            <p>
+                Usada para incorporar conteúdo de som em um documento, como música ou outros fluxos de áudio.
+            </p>
+            <p>
+                Contém uma ou mais &lt;source&gt; tags com diferentes fontes de áudio. O navegador escolherá a primeira fonte compatível.
+            </p>
+            <p>
+                O texto entre as tags &lt;audio&gt; e &lt;/audio&gt; só será exibido em navegadores que não suportam o &lt;audio&gt;.
+            </p>
+            <p>
+                Existem três formatos de áudio suportados em HTML: MP3, WAV e OGG.
+            </p>
+            <p>
+                O OGG NÃO roda no Safari.
+            </p>
+        </section>
+        <section>
+            <h2>Atributos</h2>
+            <p>
+                <a href="#">autoplay</a> - Especifica que o áudio começará a tocar assim que estiver pronto.
+            </p>
+            <p>
+                <a href="#">controls</a> - Especifica que os controles de áudio devem ser exibidos (como um botão de reprodução/pausa, etc.).
+            </p>
+            <p>
+                <a href="#">loop</a> - Especifica que o áudio recomeçará sempre que terminar.
+            </p>
+            <p>
+                <a href="#">muted</a> - Especifica que a saída de áudio deve ser silenciada.
+            </p>
+            <p>
+                <a href="#">preload</a> - Especifica se e como o autor acha que o áudio deve ser carregado quando a página for carregada.
+            </p>
+            <p>
+                <a href="#">src</a> - Especifica a URL do arquivo de áudio.
+            </p>
+            <p>
+                <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
+            </p>
+            <p>
+                <a href="#">Atributos de Evento</a> - A tag oferece suporte aos atributos de evento em HTML.
+            </p>
+        </section>
+        <section>
+            <h2>Exemplo</h2>
+            <pre>
+                <code>
+&lt;audio controls&gt;
+    &lt;source src="horse.ogg" type="audio/ogg"&gt;
+    &lt;source src="horse.mp3" type="audio/mpeg"&gt;
+    Your browser does not support the audio tag.
+&lt;/audio&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Configuração Padrão de CSS</h2>
+            <pre>
+                <code>
+Não tem.
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Compatibilidade dos Navegadores</h2>
+            <ul type="none">
+                <li>
+                    <p>
+                        Chrome = ✔️ (4.0)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Edge = ✔️ (9.0)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Firefox = ✔️ (3.5)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Safari = ✔️ (4.0)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Opera = ✔️ (11.5)
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <a href="../../tags/corpododocumento.html">Voltar a página das tags do tópico corpo do documento</a> <br>
+        <a href="../../html.html">Voltar a página das tags do HTML</a> <br>
+        <a href="../../../../principal/index.html">Voltar a página inicial</a>
+    </footer>
+</body>
+</html>

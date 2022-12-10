@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../estilos/texto.css">
+    <title>&lt;picture&gt;</title>
+</head>
+<body>
+    <header>
+        <h1>&lt;picture&gt;</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Descrição</h2>
+            <p>
+                Oferece aos desenvolvedores da Web mais flexibilidade na especificação de recursos de imagem.
+            </p>
+            <p>
+                O uso mais comum do elemento será para direção de arte em designs responsivos. Em vez de ter uma imagem dimensionada para cima ou para baixo com base na largura da janela de visualização, várias imagens podem ser projetadas para preencher melhor a janela de visualização do navegador.
+            </p>
+            <p>
+                contém duas tags: uma ou mais tags &lt;source&gt; e uma tag &lt;img&gt;.
+            </p>
+            <p>
+                O navegador procurará o primeiro elemento &lt;source&gt; em que a consulta de mídia corresponda à largura atual da viewport e exibirá a imagem adequada (especificada no atributo srcset). O elemento &lt;img&gt; é necessário como o último filho do &lt;picture&gt; elemento, como uma opção de fallback se nenhuma das tags de origem corresponder.
+            </p>
+            <h3>Notas</h3>
+            <p>
+                O &lt;picture&gt; elemento funciona "semelhante" a &lt;video&gt; e &lt;audio&gt;. Você configura fontes diferentes e a primeira fonte que se encaixa nas preferências é a que está sendo usada.
+            </p>
+        </section>
+        <section>
+            <h2>Atributos</h2>
+            <p>
+                <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
+            </p>
+            <p>
+                <a href="#">Atributos de Evento</a> - A tag oferece suporte aos atributos de evento em HTML.
+            </p>
+        </section>
+        <section>
+            <h2>Exemplo</h2>
+            <pre>
+                <code>
+&lt;picture&gt;
+    &lt;source media="(min-width:650px)" srcset="img_pink_flowers.jpg"&gt;
+&lt;/picture&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Configuração Padrão de CSS</h2>
+            <pre>
+                <code>
+Não sabemos.
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Compatibilidade dos Navegadores</h2>
+            <ul type="none">
+                <li>
+                    <p>
+                        Chrome = ✔️ (38.0)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Edge = ✔️ (13.0)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Firefox = ✔️ (38.0)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Safari = ✔️ (9.1)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Opera = ✔️ (25.0)
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <a href="../../tags/corpododocumento.html">Voltar a página das tags do tópico corpo do documento</a> <br>
+        <a href="../../html.html">Voltar a página das tags do HTML</a> <br>
+        <a href="../../../../principal/index.html">Voltar a página inicial</a>
+    </footer>
+</body>
+</html>

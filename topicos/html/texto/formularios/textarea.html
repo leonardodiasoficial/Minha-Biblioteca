@@ -5,81 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;form&gt;</title>
+    <title>&lt;textarea&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;form&gt;</h1>
+        <h1>&lt;textarea&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Usada para criar um formulário HTML para entrada do usuário.
+                Define um controle de entrada de texto de várias linhas.
             </p>
             <p>
-                O elemento pode conter um ou mais dos seguintes elementos de formulário:
+                Geralmente é usado em um formulário para coletar entradas do usuário, como comentários ou revisões.
             </p>
             <p>
-                &lt;entrada&gt;
+                Uma área de texto pode conter um número ilimitado de caracteres e o texto é renderizado em uma fonte de largura fixa (geralmente Courier).
             </p>
             <p>
-                &lt;área de texto&gt;
+                O tamanho de uma área de texto é especificado pelos atributos colse rows(ou com CSS).
             </p>
             <p>
-                &lt;botão&gt;
+                O name atributo é necessário para fazer referência aos dados do formulário após o envio do formulário (se você omitir o name atributo, nenhum dado da área de texto será enviado).
             </p>
             <p>
-                &lt;selecionar&gt;
-            </p>
-            <p>
-                &lt;opção&gt;
-            </p>
-            <p>
-                &lt;optgroup&gt;
-            </p>
-            <p>
-                &lt;conjunto de campos&gt;
-            </p>
-            <p>
-                &lt;rótulo&gt;
-            </p>
-            <p>
-                &lt;saída&gt;
+                O idatributo é necessário para associar a área de texto a um rótulo. 
             </p>
             <h3>Notas</h3>
             <p>
-                ...
+                Sempre adicione a tag &lt;label&gt; para melhores práticas de acessibilidade!
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
             <p>
-                <a href="#">accept-charset</a> - Especifica as codificações de caracteres que devem ser usadas para o envio do formulário.
+                <a href="#">autofocus</a> - Especifica que uma área de texto deve obter foco automaticamente quando a página for carregada.
             </p>
             <p>
-                <a href="#">action</a> - Especifica para onde enviar os dados do formulário quando um formulário é enviado.
+                <a href="#">cols</a> - Especifica a largura visível de uma área de texto.
             </p>
             <p>
-                <a href="#">autocomplete</a> - Especifica se um formulário deve ter o preenchimento automático ativado ou desativado.
+                <a href="#">dirname</a> - Especifica que a direção do texto da área de texto será enviada.
             </p>
             <p>
-                <a href="#">enctype</a> - Especifica como os dados do formulário devem ser codificados ao enviá-los ao servidor (somente para method="post").
+                <a href="#">disabled</a> - Especifica que uma área de texto deve ser desativada.
             </p>
             <p>
-                <a href="#">method</a> - Especifica o método HTTP a ser usado ao enviar dados de formulário.
+                <a href="#">form</a> - Especifica a qual formulário a área de texto pertence.
             </p>
             <p>
-                <a href="#">name</a> - Especifica o nome de um formulário.
+                <a href="#">maxlength</a> - Especifica o número máximo de caracteres permitidos na área de texto.
             </p>
             <p>
-                <a href="#">novalidate</a> - Especifica que o formulário não deve ser validado quando enviado.
+                <a href="#">name</a> - Especifica um nome para uma área de texto.
             </p>
             <p>
-                <a href="#">rel</a> - Especifica a relação entre um recurso vinculado e o documento atual.
+                <a href="#">placeholder</a> - Especifica uma dica curta que descreve o valor esperado de uma área de texto.
             </p>
             <p>
-                <a href="#">target</a> - Especifica onde exibir a resposta recebida após o envio do formulário.
+                <a href="#">readonly</a> - Especifica que uma área de texto deve ser somente leitura.
+            </p>
+            <p>
+                <a href="#">required</a> - Especifica que uma área de texto é obrigatória/deve ser preenchida.
+            </p>
+            <p>
+                <a href="#">rows</a> - Especifica o número visível de linhas em uma área de texto.
+            </p>
+            <p>
+                <a href="#">wrap</a> - Especifica como o texto em uma área de texto deve ser quebrado quando enviado em um formulário.
             </p>
             <p>
                 <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
@@ -92,9 +86,9 @@
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;form action="/action_page.php" method="get"&gt;
-    &lt;label for="fname"&gt;First name:&lt;/label&gt;
-&lt;/form&gt;
+&lt;textarea id="w3review" name="w3review" rows="4" cols="50"&gt;
+    At w3schools.com you.
+&lt;/textarea&gt;
                 </code>
             </pre>
         </section>
@@ -102,10 +96,7 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-form {
-    display: block;
-    margin-top: 0em;
-}
+Não tem.
                 </code>
             </pre>
         </section>

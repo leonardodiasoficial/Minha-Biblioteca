@@ -5,81 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;form&gt;</title>
+    <title>&lt;video&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;form&gt;</h1>
+        <h1>&lt;video&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Usada para criar um formulário HTML para entrada do usuário.
+                Usada para incorporar conteúdo de vídeo em um documento, como um clipe de filme ou outros fluxos de vídeo.
             </p>
             <p>
-                O elemento pode conter um ou mais dos seguintes elementos de formulário:
+                contém uma ou mais &lt;source&gt; tags com diferentes fontes de vídeo. O navegador escolherá a primeira fonte compatível.
             </p>
             <p>
-                &lt;entrada&gt;
+                O texto entre as tags &lt;video&gt; e &lt;/video&gt; só será exibido em navegadores que não suportam o elemento &lt;video&gt;.
             </p>
             <p>
-                &lt;área de texto&gt;
+                Existem três formatos de vídeo suportados em HTML: MP4, WebM e OGG.
             </p>
             <p>
-                &lt;botão&gt;
-            </p>
-            <p>
-                &lt;selecionar&gt;
-            </p>
-            <p>
-                &lt;opção&gt;
-            </p>
-            <p>
-                &lt;optgroup&gt;
-            </p>
-            <p>
-                &lt;conjunto de campos&gt;
-            </p>
-            <p>
-                &lt;rótulo&gt;
-            </p>
-            <p>
-                &lt;saída&gt;
-            </p>
-            <h3>Notas</h3>
-            <p>
-                ...
+                O OGG NÃO roda no Safari.
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
             <p>
-                <a href="#">accept-charset</a> - Especifica as codificações de caracteres que devem ser usadas para o envio do formulário.
+                <a href="#">autoplay</a> - Especifica que o vídeo começará a ser reproduzido assim que estiver pronto.
             </p>
             <p>
-                <a href="#">action</a> - Especifica para onde enviar os dados do formulário quando um formulário é enviado.
+                <a href="#">controls</a> - Especifica que os controles de vídeo devem ser exibidos (como um botão de reprodução/pausa, etc.).
             </p>
             <p>
-                <a href="#">autocomplete</a> - Especifica se um formulário deve ter o preenchimento automático ativado ou desativado.
+                <a href="#">height</a> - Define a altura do player de vídeo.
             </p>
             <p>
-                <a href="#">enctype</a> - Especifica como os dados do formulário devem ser codificados ao enviá-los ao servidor (somente para method="post").
+                <a href="#">loop</a> - Especifica que o vídeo recomeçará sempre que terminar.
             </p>
             <p>
-                <a href="#">method</a> - Especifica o método HTTP a ser usado ao enviar dados de formulário.
+                <a href="#">muted</a> - Especifica que a saída de áudio do vídeo deve ser silenciada.
             </p>
             <p>
-                <a href="#">name</a> - Especifica o nome de um formulário.
+                <a href="#">poster</a> - Especifica uma imagem a ser exibida durante o download do vídeo ou até que o usuário aperte o botão play.
             </p>
             <p>
-                <a href="#">novalidate</a> - Especifica que o formulário não deve ser validado quando enviado.
+                <a href="#">preload</a> - Especifica se e como o autor acha que o vídeo deve ser carregado quando a página for carregada.
             </p>
             <p>
-                <a href="#">rel</a> - Especifica a relação entre um recurso vinculado e o documento atual.
+                <a href="#">src</a> - Especifica a URL do arquivo de vídeo.
             </p>
             <p>
-                <a href="#">target</a> - Especifica onde exibir a resposta recebida após o envio do formulário.
+                <a href="#">width</a> - Define a largura do player de vídeo.
             </p>
             <p>
                 <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
@@ -92,9 +70,11 @@
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;form action="/action_page.php" method="get"&gt;
-    &lt;label for="fname"&gt;First name:&lt;/label&gt;
-&lt;/form&gt;
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="movie.mp4" type="video/mp4"&gt;
+    &lt;source src="movie.ogg" type="video/ogg"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
                 </code>
             </pre>
         </section>
@@ -102,10 +82,7 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-form {
-    display: block;
-    margin-top: 0em;
-}
+Não tem.
                 </code>
             </pre>
         </section>
@@ -114,27 +91,27 @@ form {
             <ul type="none">
                 <li>
                     <p>
-                        Chrome = ✔️
+                        Chrome = ✔️ (4.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Edge = ✔️
+                        Edge = ✔️ (9.0)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Firefox = ✔️
+                        Firefox = ✔️ (3.5)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Safari = ✔️
+                        Safari = ✔️ (3.1)
                     </p>
                 </li>
                 <li>
                     <p>
-                        Opera = ✔️
+                        Opera = ✔️ (11.5)
                     </p>
                 </li>
             </ul>
