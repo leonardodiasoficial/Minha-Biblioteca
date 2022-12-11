@@ -5,75 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;img&gt;</title>
+    <title>&lt;a&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;img&gt;</h1>
+        <h1>&lt;a&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Usada para incorporar uma imagem em uma página HTML.
+                Define um hiperlink, que é usado para vincular de uma página a outra.
             </p>
             <p>
-                As imagens não são tecnicamente inseridas em uma página da web; as imagens estão vinculadas a páginas da web. A &lt;img&gt; cria um espaço de retenção para a imagem referenciada.
-            </p>
-            <p>
-                A &lt;img&gt; tem dois atributos obrigatórios:
-            </p>
-            <p>
-                src - Especifica o caminho para a imagem;
-            </p>
-            <p>
-                alt - Especifica um texto alternativo para a imagem, se a imagem por algum motivo não puder ser exibida.
+                O atributo mais importante do &lt;a&gt; é o atributo href, que indica o destino do link.
             </p>
             <h3>Notas</h3>
             <p>
-                Além disso, sempre especifique a largura e a altura de uma imagem. Se largura e altura não forem especificadas, a página pode piscar enquanto a imagem é carregada.
+                Se a &lt;a&gt; não tiver nenhum hrefatributo, ela é apenas um espaço reservado para um hiperlink.
             </p>
             <p>
-                Para vincular uma imagem a outro documento, basta aninhar a &lt;img&gt; dentro de uma tag &lt;a&gt;.
+                Uma página vinculada normalmente é exibida na janela do navegador atual, a menos que você especifique outro destino.
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
             <p>
-                <a href="#">alt</a> - Especifica um texto alternativo para uma imagem.
+                <a href="#">download</a> - Especifica que o destino será baixado quando um usuário clicar no hiperlink.
             </p>
             <p>
-                <a href="#">crossorigin</a> - Permitir que imagens de sites de terceiros que permitem o acesso entre origens sejam usadas com a tela.
+                <a href="#">href</a> - Especifica o URL da página para a qual o link vai.
             </p>
             <p>
-                <a href="#">height</a> - Especifica a altura de uma imagem.
+                <a href="#">hreflang</a> - Especifica o idioma do documento vinculado.
             </p>
             <p>
-                <a href="#">ismap</a> - Especifica uma imagem como um mapa de imagem do lado do servidor.
+                <a href="#">media</a> - Especifica para qual mídia/dispositivo o documento vinculado é otimizado.
             </p>
             <p>
-                <a href="#">loading</a> - Especifica se um navegador deve carregar uma imagem imediatamente ou adiar o carregamento de imagens até que algumas condições sejam atendidas.
+                <a href="#">ping</a> - Especifica uma lista separada por espaço de URLs para a qual, quando o link for seguido, as solicitações de postagem com o ping do corpo serão enviadas pelo navegador (em segundo plano). Normalmente usado para rastreamento.
             </p>
             <p>
-                <a href="#">longdesc</a> - Especifica um URL para uma descrição detalhada de uma imagem.
+                <a href="#">referrerpolicy</a> - Especifica quais informações do referenciador enviar com o link.
             </p>
             <p>
-                <a href="#">referrerpolicy</a> - Especifica quais informações do referenciador usar ao buscar uma imagem.
+                <a href="#">rel</a> - Especifica a relação entre o documento atual e o documento vinculado.
             </p>
             <p>
-                <a href="#">sizes</a> - Especifica tamanhos de imagem para diferentes layouts de página.
+                <a href="#">target</a> - Especifica onde abrir o documento vinculado.
             </p>
             <p>
-                <a href="#">src</a> - Especifica o caminho para a imagem.
-            </p>
-            <p>
-                <a href="#">srcset</a> - Especifica uma lista de arquivos de imagem para usar em diferentes situações.
-            </p>
-            <p>
-                <a href="#">usemap</a> - Especifica uma imagem como um mapa de imagens do lado do cliente.
-            </p>
-            <p>
-                <a href="#">width</a> - Especifica a largura de uma imagem.
+                <a href="#">type</a> - Especifica o tipo de mídia do documento vinculado.
             </p>
             <p>
                 <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
@@ -86,7 +68,7 @@
             <h2>Exemplo</h2>
             <pre>
                 <code>
-&lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"&gt;
+&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools.com!&lt;/a&gt;
                 </code>
             </pre>
         </section>
@@ -94,8 +76,14 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-img {
-    display: inline-block;
+a:link, a:visited {
+    color: (internal value);
+    text-decoration: underline;
+    cursor: auto;
+}
+    
+a:link:active, a:visited:active {
+    color: (internal value);
 }
                 </code>
             </pre>

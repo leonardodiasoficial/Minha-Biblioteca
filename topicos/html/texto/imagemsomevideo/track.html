@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../estilos/texto.css">
+    <title>&lt;track&gt;</title>
+</head>
+<body>
+    <header>
+        <h1>&lt;track&gt;</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Descrição</h2>
+            <p>
+                Especifica faixas de texto para elementos &lt;audio&gt; ou &lt;video&gt;.
+            </p>
+            <p>
+                Este elemento é usado para especificar legendas, arquivos de legenda ou outros arquivos contendo texto, que devem estar visíveis quando a mídia estiver sendo reproduzida.
+            </p>
+            <p>
+                As trilhas são formatadas no formato WebVTT (arquivos .vtt).
+            </p>
+        </section>
+        <section>
+            <h2>Atributos</h2>
+            <p>
+                <a href="#">default</a> - Especifica que a faixa deve ser habilitada se as preferências do usuário não indicarem que outra faixa seria mais apropriada.
+            </p>
+            <p>
+                <a href="#">kind</a> - Especifica o tipo de faixa de texto.
+            </p>
+            <p>
+                <a href="#">label</a> - Especifica o título da faixa de texto.
+            </p>
+            <p>
+                <a href="#">src</a> - Requeridos. Especifica a URL do arquivo de trilha.
+            </p>
+            <p>
+                <a href="#">srclang</a> - Especifica o idioma dos dados do texto da faixa (obrigatório se kind="legendas").
+            </p>
+            <p>
+                <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
+            </p>
+            <p>
+                <a href="#">Atributos de Evento</a> - A tag oferece suporte aos atributos de evento em HTML.
+            </p>
+        </section>
+        <section>
+            <h2>Exemplo</h2>
+            <pre>
+                <code>
+&lt;video width="320" height="240" controls&gt;
+    &lt;source src="forrest_gump.mp4" type="video/mp4"&gt;
+    &lt;source src="forrest_gump.ogg" type="video/ogg"&gt;
+    &lt;track src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;
+    &lt;track src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian"&gt;
+&lt;/video&gt;
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Configuração Padrão de CSS</h2>
+            <pre>
+                <code>
+Não tem.
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Compatibilidade dos Navegadores</h2>
+            <ul type="none">
+                <li>
+                    <p>
+                        Chrome = ✔️ (23.0)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Edge = ✔️ (10.0)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Firefox = ✔️ (31.0)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Safari = ✔️ (6.0)
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        Opera = ✔️ (12.1)
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <a href="../../tags/corpododocumento.html">Voltar a página das tags do tópico corpo do documento</a> <br>
+        <a href="../../html.html">Voltar a página das tags do HTML</a> <br>
+        <a href="../../../../principal/index.html">Voltar a página inicial</a>
+    </footer>
+</body>
+</html>
