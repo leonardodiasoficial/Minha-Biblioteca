@@ -5,74 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;object&gt;</title>
+    <title>&lt;iframe&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;object&gt;</h1>
+        <h1>&lt;iframe&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Define um contêiner para um recurso externo.
+                Especifica um quadro embutido.
             </p>
             <p>
-                O recurso externo pode ser uma página da Web, uma imagem, um reprodutor de mídia ou um aplicativo plug-in.
+                Um quadro embutido é usado para incorporar outro documento no documento HTML atual.
+            </p>
+            <h3>Notas</h3>
+            <p>
+                Use CSS para estilizar &lt;iframe&gt;
             </p>
             <p>
-                Foi originalmente projetada para incorporar plug-ins de navegador.
-            </p>
-            <p>
-                Plug-ins são programas de computador que estendem a funcionalidade padrão do navegador.
-            </p>
-            <p>
-                Os plug-ins têm sido usados ​​para muitas finalidades diferentes:
-            </p>
-            <p>
-                Executar miniaplicativos Java;
-            </p>
-            <p>
-                Executar controles ActiveX;
-            </p>
-            <p>
-                Exibir filmes em Flash;
-            </p>
-            <p>
-                Exibir mapas;
-            </p>
-            <p>
-                Verificar virus;
-            </p>
-            <p>
-                Verificar um id de banco.
+                É uma boa prática sempre incluir um atributo de título para o arquivo &lt;iframe&gt;. Isso é usado por leitores de tela para ler qual &lt;iframe&gt; é o conteúdo.
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
             <p>
-                <a href="#">data</a> - Especifica a URL do recurso a ser usado pelo objeto.
+                <a href="#">allow</a> - Especifica uma política de recursos para o &lt;iframe&gt;.
             </p>
             <p>
-                <a href="#">form</a> - Especifica a qual formulário o objeto pertence.
+                <a href="#">allowfullscreen</a> - Defina como verdadeiro se o &lt;iframe&gt; puder ativar o modo de tela cheia chamando o método requestFullscreen().
             </p>
             <p>
-                <a href="#">height</a> - Especifica a altura do objeto.
+                <a href="#">allowpaymentrequest</a> - Defina como true se um &lt;iframe&gt; de origem cruzada deve ter permissão para invocar a API de solicitação de pagamento.
             </p>
             <p>
-                <a href="#">name</a> - Especifica um nome para o objeto.
+                <a href="#">height</a> - Especifica a altura de um &lt;iframe&gt;. Altura padrão é 150 pixels.
             </p>
             <p>
-                <a href="#">type</a> - Especifica o tipo de mídia dos dados especificados no atributo de dados.
+                <a href="#">loading</a> - Especifica se um navegador deve carregar um iframe imediatamente ou adiar o carregamento de iframes até que algumas condições sejam atendidas.
             </p>
             <p>
-                <a href="#">typemustmatch</a> - Especifica se o atributo type e o conteúdo real do recurso devem corresponder para serem exibidos.
+                <a href="#">name</a> - Especifica o nome de um &lt;iframe&gt;.
             </p>
             <p>
-                <a href="#">usemap</a> - Especifica o nome de um mapa de imagem do lado do cliente a ser usado com o objeto.
+                <a href="#">referrerpolicy</a> - Especifica quais informações do referenciador enviar ao buscar o iframe.
             </p>
             <p>
-                <a href="#">width</a> - Especifica a largura do objeto.
+                <a href="#">sandbox</a> - Habilita um conjunto extra de restrições para o conteúdo em um &lt;iframe&gt;.
+            </p>
+            <p>
+                <a href="#">src</a> - Especifica o endereço do documento a ser inserido no &lt;iframe&gt;.
+            </p>
+            <p>
+                <a href="#">srcdoc</a> - Especifica o conteúdo HTML da página para mostrar no &lt;iframe&gt;.
+            </p>
+            <p>
+                <a href="#">width</a> - Especifica a largura de um &lt;iframe&gt;. A largura padrão é de 300 pixels.
             </p>
             <p>
                 <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
@@ -83,28 +72,9 @@
         </section>
         <section>
             <h2>Exemplo</h2>
-            <p>
-                Uma imagem incorporada
-            </p>
             <pre>
                 <code>
-&lt;object data="pic_trulli.jpg" width="300" height="200"&gt;&lt;/object&gt;
-                </code>
-            </pre>
-            <p>
-                Uma página HTML incorporada
-            </p>
-            <pre>
-                <code>
-&lt;object data="snippet.html" width="500" height="200"&gt;&lt;/object&gt;
-                </code>
-            </pre>
-            <p>
-                Um vídeo incorporado
-            </p>
-            <pre>
-                <code>
-&lt;object data="video.mp4" width="400" height="300"&gt;&lt;/object&gt;
+&lt;iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"&gt;&lt;/iframe&gt;
                 </code>
             </pre>
         </section>
@@ -112,8 +82,12 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-object:focus {
+iframe:focus {
     outline: none;
+}
+    
+iframe[seamless] {
+    display: block;
 }
                 </code>
             </pre>

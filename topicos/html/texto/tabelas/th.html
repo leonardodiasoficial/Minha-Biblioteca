@@ -5,74 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../estilos/texto.css">
-    <title>&lt;object&gt;</title>
+    <title>&lt;th&gt;</title>
 </head>
 <body>
     <header>
-        <h1>&lt;object&gt;</h1>
+        <h1>&lt;th&gt;</h1>
     </header>
     <main>
         <section>
             <h2>Descrição</h2>
             <p>
-                Define um contêiner para um recurso externo.
+                Define uma célula de cabeçalho em uma tabela HTML.
             </p>
             <p>
-                O recurso externo pode ser uma página da Web, uma imagem, um reprodutor de mídia ou um aplicativo plug-in.
+                Uma tabela HTML tem dois tipos de células:
             </p>
             <p>
-                Foi originalmente projetada para incorporar plug-ins de navegador.
+                Células de cabeçalho - contém informações de cabeçalho (criadas com o &lt;th&gt;);
             </p>
             <p>
-                Plug-ins são programas de computador que estendem a funcionalidade padrão do navegador.
+                Células de dados - contém dados (criados com o elemento &lt;td&gt;).
+            </p>
+            <h3>Notas</h3>
+            <p>
+                O texto nos &lt;th&gt; está em negrito e centralizado por padrão.
             </p>
             <p>
-                Os plug-ins têm sido usados ​​para muitas finalidades diferentes:
-            </p>
-            <p>
-                Executar miniaplicativos Java;
-            </p>
-            <p>
-                Executar controles ActiveX;
-            </p>
-            <p>
-                Exibir filmes em Flash;
-            </p>
-            <p>
-                Exibir mapas;
-            </p>
-            <p>
-                Verificar virus;
-            </p>
-            <p>
-                Verificar um id de banco.
+                O texto nos elementos &lt;td&gt; são regulares e alinhados à esquerda por padrão.
             </p>
         </section>
         <section>
             <h2>Atributos</h2>
             <p>
-                <a href="#">data</a> - Especifica a URL do recurso a ser usado pelo objeto.
+                <a href="#">abbr</a> - Especifica uma versão abreviada do conteúdo em uma célula de cabeçalho.
             </p>
             <p>
-                <a href="#">form</a> - Especifica a qual formulário o objeto pertence.
+                <a href="#">colspan</a> - Especifica o número de colunas que uma célula de cabeçalho deve abranger.
             </p>
             <p>
-                <a href="#">height</a> - Especifica a altura do objeto.
+                <a href="#">headers</a> - Especifica uma ou mais células de cabeçalho às quais uma célula está relacionada.
             </p>
             <p>
-                <a href="#">name</a> - Especifica um nome para o objeto.
+                <a href="#">rowspan</a> - Especifica o número de linhas que uma célula de cabeçalho deve abranger.
             </p>
             <p>
-                <a href="#">type</a> - Especifica o tipo de mídia dos dados especificados no atributo de dados.
-            </p>
-            <p>
-                <a href="#">typemustmatch</a> - Especifica se o atributo type e o conteúdo real do recurso devem corresponder para serem exibidos.
-            </p>
-            <p>
-                <a href="#">usemap</a> - Especifica o nome de um mapa de imagem do lado do cliente a ser usado com o objeto.
-            </p>
-            <p>
-                <a href="#">width</a> - Especifica a largura do objeto.
+                <a href="#">scope</a> - Especifica se uma célula de cabeçalho é um cabeçalho para uma coluna, linha ou grupo de colunas ou linhas.
             </p>
             <p>
                 <a href="#">Atributos Globais</a> - A tag suporta os atributos globais em HTML.
@@ -83,28 +60,22 @@
         </section>
         <section>
             <h2>Exemplo</h2>
-            <p>
-                Uma imagem incorporada
-            </p>
             <pre>
                 <code>
-&lt;object data="pic_trulli.jpg" width="300" height="200"&gt;&lt;/object&gt;
-                </code>
-            </pre>
-            <p>
-                Uma página HTML incorporada
-            </p>
-            <pre>
-                <code>
-&lt;object data="snippet.html" width="500" height="200"&gt;&lt;/object&gt;
-                </code>
-            </pre>
-            <p>
-                Um vídeo incorporado
-            </p>
-            <pre>
-                <code>
-&lt;object data="video.mp4" width="400" height="300"&gt;&lt;/object&gt;
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Month&lt;/th&gt;
+        &lt;th&gt;Savings&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;January&lt;/td&gt;
+        &lt;td&gt;$100&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;February&lt;/td&gt;
+        &lt;td&gt;$80&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
                 </code>
             </pre>
         </section>
@@ -112,8 +83,11 @@
             <h2>Configuração Padrão de CSS</h2>
             <pre>
                 <code>
-object:focus {
-    outline: none;
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: center;
 }
                 </code>
             </pre>
