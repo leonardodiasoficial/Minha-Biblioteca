@@ -33,24 +33,29 @@ nav {
 }
 
 nav > a {
-    display: block;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     color: white;
     text-decoration: none;
     padding: 100px;
+    
 }
 
 nav > a#html:hover {
     color: #F2622E;
     background-image: url(../imagens/html.png);
-    background-size: 400px;
+    background-size: 275px;
     background-repeat: no-repeat;
     background-position: center center;
+    
 }
 
 nav >a#css:hover {
     color: #2E6FF2;
     background-image: url(../imagens/css.png);
-    background-size: 400px;
+    background-size: 275px;
     background-repeat: no-repeat;
     background-position: center center;
 }
